@@ -10,4 +10,4 @@
 */
 
 
-
+Route::resource('countries', 'CountryAPIController');
