@@ -14,3 +14,27 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('countries', 'CountryController');
+
+Route::get('home', 'HomeController@index');
+
+// Route::auth();
+
+
+/*
+|--------------------------------------------------------------------------
+| API routes
+|--------------------------------------------------------------------------
+*/
+
+// Route::group(['prefix' => 'api', 'namespace' => 'API'], function () {
+//     Route::group(['prefix' => 'v1'], function () {
+//         require config('infyom.laravel_generator.path.api_routes');
+//     });
+// });
+
+
+
+
+
